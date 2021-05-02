@@ -13,19 +13,16 @@
 		CEC7FE32263F0E3400616CD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC7FE30263F0E3400616CD8 /* Main.storyboard */; };
 		CEC7FE34263F0E3500616CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC7FE33263F0E3500616CD8 /* Assets.xcassets */; };
 		CEC7FE37263F0E3500616CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC7FE35263F0E3500616CD8 /* LaunchScreen.storyboard */; };
-		CEC7FE42263F0E3500616CD8 /* DesignPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7FE41263F0E3500616CD8 /* DesignPatternTests.swift */; };
-		CEC7FE4D263F0E3500616CD8 /* DesignPatternUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7FE4C263F0E3500616CD8 /* DesignPatternUITests.swift */; };
+		CEC7FE42263F0E3500616CD8 /* IteratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7FE41263F0E3500616CD8 /* IteratorTests.swift */; };
+		CEC7FE70263F12B300616CD8 /* BookShelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7FE6F263F12B300616CD8 /* BookShelf.swift */; };
+		CEC7FE76263F139E00616CD8 /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7FE75263F139E00616CD8 /* Iterator.swift */; };
+		CEC7FE7A263F146700616CD8 /* Aggregate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7FE79263F146700616CD8 /* Aggregate.swift */; };
+		CEC7FE7E263F16B700616CD8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7FE7D263F16B700616CD8 /* Book.swift */; };
+		CEC7FE82263F170100616CD8 /* BookShelfIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7FE81263F170100616CD8 /* BookShelfIterator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CEC7FE3E263F0E3500616CD8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEC7FE1F263F0E3400616CD8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CEC7FE26263F0E3400616CD8;
-			remoteInfo = DesignPattern;
-		};
-		CEC7FE49263F0E3500616CD8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEC7FE1F263F0E3400616CD8 /* Project object */;
 			proxyType = 1;
@@ -44,11 +41,13 @@
 		CEC7FE36263F0E3500616CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC7FE38263F0E3500616CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEC7FE3D263F0E3500616CD8 /* DesignPatternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignPatternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEC7FE41263F0E3500616CD8 /* DesignPatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternTests.swift; sourceTree = "<group>"; };
+		CEC7FE41263F0E3500616CD8 /* IteratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorTests.swift; sourceTree = "<group>"; };
 		CEC7FE43263F0E3500616CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEC7FE48263F0E3500616CD8 /* DesignPatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignPatternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEC7FE4C263F0E3500616CD8 /* DesignPatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternUITests.swift; sourceTree = "<group>"; };
-		CEC7FE4E263F0E3500616CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC7FE6F263F12B300616CD8 /* BookShelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelf.swift; sourceTree = "<group>"; };
+		CEC7FE75263F139E00616CD8 /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
+		CEC7FE79263F146700616CD8 /* Aggregate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aggregate.swift; sourceTree = "<group>"; };
+		CEC7FE7D263F16B700616CD8 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		CEC7FE81263F170100616CD8 /* BookShelfIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfIterator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +65,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEC7FE45263F0E3500616CD8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +73,6 @@
 			children = (
 				CEC7FE29263F0E3400616CD8 /* DesignPattern */,
 				CEC7FE40263F0E3500616CD8 /* DesignPatternTests */,
-				CEC7FE4B263F0E3500616CD8 /* DesignPatternUITests */,
 				CEC7FE28263F0E3400616CD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +82,6 @@
 			children = (
 				CEC7FE27263F0E3400616CD8 /* DesignPattern.app */,
 				CEC7FE3D263F0E3500616CD8 /* DesignPatternTests.xctest */,
-				CEC7FE48263F0E3500616CD8 /* DesignPatternUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +89,7 @@
 		CEC7FE29263F0E3400616CD8 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				CEC7FE5D263F0E3F00616CD8 /* Iterator */,
 				CEC7FE2A263F0E3400616CD8 /* AppDelegate.swift */,
 				CEC7FE2C263F0E3400616CD8 /* SceneDelegate.swift */,
 				CEC7FE2E263F0E3400616CD8 /* ViewController.swift */,
@@ -113,19 +104,22 @@
 		CEC7FE40263F0E3500616CD8 /* DesignPatternTests */ = {
 			isa = PBXGroup;
 			children = (
-				CEC7FE41263F0E3500616CD8 /* DesignPatternTests.swift */,
+				CEC7FE41263F0E3500616CD8 /* IteratorTests.swift */,
 				CEC7FE43263F0E3500616CD8 /* Info.plist */,
 			);
 			path = DesignPatternTests;
 			sourceTree = "<group>";
 		};
-		CEC7FE4B263F0E3500616CD8 /* DesignPatternUITests */ = {
+		CEC7FE5D263F0E3F00616CD8 /* Iterator */ = {
 			isa = PBXGroup;
 			children = (
-				CEC7FE4C263F0E3500616CD8 /* DesignPatternUITests.swift */,
-				CEC7FE4E263F0E3500616CD8 /* Info.plist */,
+				CEC7FE7D263F16B700616CD8 /* Book.swift */,
+				CEC7FE6F263F12B300616CD8 /* BookShelf.swift */,
+				CEC7FE81263F170100616CD8 /* BookShelfIterator.swift */,
+				CEC7FE79263F146700616CD8 /* Aggregate.swift */,
+				CEC7FE75263F139E00616CD8 /* Iterator.swift */,
 			);
-			path = DesignPatternUITests;
+			path = Iterator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +160,6 @@
 			productReference = CEC7FE3D263F0E3500616CD8 /* DesignPatternTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CEC7FE47263F0E3500616CD8 /* DesignPatternUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CEC7FE57263F0E3500616CD8 /* Build configuration list for PBXNativeTarget "DesignPatternUITests" */;
-			buildPhases = (
-				CEC7FE44263F0E3500616CD8 /* Sources */,
-				CEC7FE45263F0E3500616CD8 /* Frameworks */,
-				CEC7FE46263F0E3500616CD8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CEC7FE4A263F0E3500616CD8 /* PBXTargetDependency */,
-			);
-			name = DesignPatternUITests;
-			productName = DesignPatternUITests;
-			productReference = CEC7FE48263F0E3500616CD8 /* DesignPatternUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +173,6 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					CEC7FE3C263F0E3500616CD8 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = CEC7FE26263F0E3400616CD8;
-					};
-					CEC7FE47263F0E3500616CD8 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = CEC7FE26263F0E3400616CD8;
 					};
@@ -221,7 +193,6 @@
 			targets = (
 				CEC7FE26263F0E3400616CD8 /* DesignPattern */,
 				CEC7FE3C263F0E3500616CD8 /* DesignPatternTests */,
-				CEC7FE47263F0E3500616CD8 /* DesignPatternUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,13 +215,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEC7FE46263F0E3500616CD8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,8 +223,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC7FE2F263F0E3400616CD8 /* ViewController.swift in Sources */,
+				CEC7FE82263F170100616CD8 /* BookShelfIterator.swift in Sources */,
 				CEC7FE2B263F0E3400616CD8 /* AppDelegate.swift in Sources */,
+				CEC7FE7E263F16B700616CD8 /* Book.swift in Sources */,
 				CEC7FE2D263F0E3400616CD8 /* SceneDelegate.swift in Sources */,
+				CEC7FE76263F139E00616CD8 /* Iterator.swift in Sources */,
+				CEC7FE70263F12B300616CD8 /* BookShelf.swift in Sources */,
+				CEC7FE7A263F146700616CD8 /* Aggregate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,15 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC7FE42263F0E3500616CD8 /* DesignPatternTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEC7FE44263F0E3500616CD8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CEC7FE4D263F0E3500616CD8 /* DesignPatternUITests.swift in Sources */,
+				CEC7FE42263F0E3500616CD8 /* IteratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +248,6 @@
 			isa = PBXTargetDependency;
 			target = CEC7FE26263F0E3400616CD8 /* DesignPattern */;
 			targetProxy = CEC7FE3E263F0E3500616CD8 /* PBXContainerItemProxy */;
-		};
-		CEC7FE4A263F0E3500616CD8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CEC7FE26263F0E3400616CD8 /* DesignPattern */;
-			targetProxy = CEC7FE49263F0E3500616CD8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -513,46 +469,6 @@
 			};
 			name = Release;
 		};
-		CEC7FE58263F0E3500616CD8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E53J4346HQ;
-				INFOPLIST_FILE = DesignPatternUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cozzin.DesignPatternUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DesignPattern;
-			};
-			name = Debug;
-		};
-		CEC7FE59263F0E3500616CD8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E53J4346HQ;
-				INFOPLIST_FILE = DesignPatternUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cozzin.DesignPatternUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DesignPattern;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,15 +495,6 @@
 			buildConfigurations = (
 				CEC7FE55263F0E3500616CD8 /* Debug */,
 				CEC7FE56263F0E3500616CD8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CEC7FE57263F0E3500616CD8 /* Build configuration list for PBXNativeTarget "DesignPatternUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEC7FE58263F0E3500616CD8 /* Debug */,
-				CEC7FE59263F0E3500616CD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
