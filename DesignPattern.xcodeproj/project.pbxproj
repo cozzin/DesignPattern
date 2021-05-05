@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE961B462642CAAC00D54F2F /* TemplateMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE961B452642CAAC00D54F2F /* TemplateMethodTests.swift */; };
+		CE961B4D2642D07800D54F2F /* AbstractDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE961B4C2642D07800D54F2F /* AbstractDisplay.swift */; };
+		CE961B512642D31600D54F2F /* CharDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE961B502642D31600D54F2F /* CharDisplay.swift */; };
+		CE961B552642D3E500D54F2F /* StringDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE961B542642D3E500D54F2F /* StringDisplay.swift */; };
 		CEC7FE2B263F0E3400616CD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7FE2A263F0E3400616CD8 /* AppDelegate.swift */; };
 		CEC7FE2D263F0E3400616CD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7FE2C263F0E3400616CD8 /* SceneDelegate.swift */; };
 		CEC7FE2F263F0E3400616CD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7FE2E263F0E3400616CD8 /* ViewController.swift */; };
@@ -32,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE961B452642CAAC00D54F2F /* TemplateMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethodTests.swift; sourceTree = "<group>"; };
+		CE961B4C2642D07800D54F2F /* AbstractDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractDisplay.swift; sourceTree = "<group>"; };
+		CE961B502642D31600D54F2F /* CharDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharDisplay.swift; sourceTree = "<group>"; };
+		CE961B542642D3E500D54F2F /* StringDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDisplay.swift; sourceTree = "<group>"; };
 		CEC7FE27263F0E3400616CD8 /* DesignPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC7FE2A263F0E3400616CD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC7FE2C263F0E3400616CD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +76,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE961B492642CB0100D54F2F /* TemplateMethod */ = {
+			isa = PBXGroup;
+			children = (
+				CE961B4C2642D07800D54F2F /* AbstractDisplay.swift */,
+				CE961B502642D31600D54F2F /* CharDisplay.swift */,
+				CE961B542642D3E500D54F2F /* StringDisplay.swift */,
+			);
+			path = TemplateMethod;
+			sourceTree = "<group>";
+		};
 		CEC7FE1E263F0E3400616CD8 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC7FE5D263F0E3F00616CD8 /* Iterator */,
+				CE961B492642CB0100D54F2F /* TemplateMethod */,
 				CEC7FE2A263F0E3400616CD8 /* AppDelegate.swift */,
 				CEC7FE2C263F0E3400616CD8 /* SceneDelegate.swift */,
 				CEC7FE2E263F0E3400616CD8 /* ViewController.swift */,
@@ -105,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC7FE41263F0E3500616CD8 /* IteratorTests.swift */,
+				CE961B452642CAAC00D54F2F /* TemplateMethodTests.swift */,
 				CEC7FE43263F0E3500616CD8 /* Info.plist */,
 			);
 			path = DesignPatternTests;
@@ -226,9 +246,12 @@
 				CEC7FE82263F170100616CD8 /* BookShelfIterator.swift in Sources */,
 				CEC7FE2B263F0E3400616CD8 /* AppDelegate.swift in Sources */,
 				CEC7FE7E263F16B700616CD8 /* Book.swift in Sources */,
+				CE961B552642D3E500D54F2F /* StringDisplay.swift in Sources */,
 				CEC7FE2D263F0E3400616CD8 /* SceneDelegate.swift in Sources */,
 				CEC7FE76263F139E00616CD8 /* Iterator.swift in Sources */,
 				CEC7FE70263F12B300616CD8 /* BookShelf.swift in Sources */,
+				CE961B4D2642D07800D54F2F /* AbstractDisplay.swift in Sources */,
+				CE961B512642D31600D54F2F /* CharDisplay.swift in Sources */,
 				CEC7FE7A263F146700616CD8 /* Aggregate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE961B462642CAAC00D54F2F /* TemplateMethodTests.swift in Sources */,
 				CEC7FE42263F0E3500616CD8 /* IteratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
