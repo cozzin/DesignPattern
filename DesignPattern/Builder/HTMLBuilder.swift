@@ -52,25 +52,14 @@ final class HTMLBuilder: Builder {
 final class PrintWriter {
     
     enum Exception: Error {
-        case fileWriteException(Error)
         case invalidfileURL
     }
     
     fileprivate let filename: String
-    private let fileURL: URL
     private var contents: String
     
-    init?(filename: String) {
-        guard let fileURL = FileManager
-                .default
-                .urls(for: .documentDirectory, in: .userDomainMask)
-                .first?
-                .appendingPathComponent(filename) else {
-            return nil
-        }
-        
+    init(filename: String) {
         self.filename = filename
-        self.fileURL = fileURL
         self.contents = ""
     }
     
@@ -79,6 +68,14 @@ final class PrintWriter {
     }
     
     func close() throws {
+        guard let fileURL = FileManager
+                .default
+                .urls(for: .documentDirectory, in: .userDomainMask)
+                .first?
+                .appendingPathComponent(filename) else {
+            throw Exception.invalidfileURL
+        }
+        
         try contents.write(to: fileURL, atomically: true, encoding: .utf8)
     }
     
