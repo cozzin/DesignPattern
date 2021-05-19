@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE86CD012655004E004C411D /* PrintWritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86CD002655004E004C411D /* PrintWritable.swift */; };
+		CE86CD072655005F004C411D /* PrintWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86CD062655005F004C411D /* PrintWriter.swift */; };
+		CE86CD0B26550073004C411D /* CachedPrintWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86CD0A26550073004C411D /* CachedPrintWriter.swift */; };
 		CE8BB14E26516E91007E399C /* BuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BB14D26516E91007E399C /* BuilderTests.swift */; };
 		CE8BB15A26516FCF007E399C /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BB15926516FCF007E399C /* Builder.swift */; };
 		CE8BB1602651708C007E399C /* Director.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BB15F2651708C007E399C /* Director.swift */; };
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE86CD002655004E004C411D /* PrintWritable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintWritable.swift; sourceTree = "<group>"; };
+		CE86CD062655005F004C411D /* PrintWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintWriter.swift; sourceTree = "<group>"; };
+		CE86CD0A26550073004C411D /* CachedPrintWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedPrintWriter.swift; sourceTree = "<group>"; };
 		CE8BB14D26516E91007E399C /* BuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderTests.swift; sourceTree = "<group>"; };
 		CE8BB15926516FCF007E399C /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		CE8BB15F2651708C007E399C /* Director.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Director.swift; sourceTree = "<group>"; };
@@ -86,9 +92,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE86CCFF26550042004C411D /* PrintWriter */ = {
+			isa = PBXGroup;
+			children = (
+				CE86CD002655004E004C411D /* PrintWritable.swift */,
+				CE86CD062655005F004C411D /* PrintWriter.swift */,
+				CE86CD0A26550073004C411D /* CachedPrintWriter.swift */,
+			);
+			path = PrintWriter;
+			sourceTree = "<group>";
+		};
 		CE8BB14626516E6E007E399C /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				CE86CCFF26550042004C411D /* PrintWriter */,
 				CE8BB15926516FCF007E399C /* Builder.swift */,
 				CE8BB1632651F2CA007E399C /* TextBuilder.swift */,
 				CE8BB1672651F4BE007E399C /* HTMLBuilder.swift */,
@@ -275,9 +292,11 @@
 			files = (
 				CE8BB1682651F4BE007E399C /* HTMLBuilder.swift in Sources */,
 				CE8BB1642651F2CA007E399C /* TextBuilder.swift in Sources */,
+				CE86CD0B26550073004C411D /* CachedPrintWriter.swift in Sources */,
 				CE8BB1602651708C007E399C /* Director.swift in Sources */,
 				CEC7FE2F263F0E3400616CD8 /* ViewController.swift in Sources */,
 				CEC7FE82263F170100616CD8 /* BookShelfIterator.swift in Sources */,
+				CE86CD012655004E004C411D /* PrintWritable.swift in Sources */,
 				CEC7FE2B263F0E3400616CD8 /* AppDelegate.swift in Sources */,
 				CEC7FE7E263F16B700616CD8 /* Book.swift in Sources */,
 				CE961B552642D3E500D54F2F /* StringDisplay.swift in Sources */,
@@ -286,6 +305,7 @@
 				CEC7FE70263F12B300616CD8 /* BookShelf.swift in Sources */,
 				CE961B4D2642D07800D54F2F /* AbstractDisplay.swift in Sources */,
 				CE961B512642D31600D54F2F /* CharDisplay.swift in Sources */,
+				CE86CD072655005F004C411D /* PrintWriter.swift in Sources */,
 				CEC7FE7A263F146700616CD8 /* Aggregate.swift in Sources */,
 				CE8BB15A26516FCF007E399C /* Builder.swift in Sources */,
 			);
