@@ -11,18 +11,17 @@ final class FlickerAD: PlainAD {
     
     private var timer: DispatchSourceTimer?
     
-    func startFlicker(on label: UILabel) {
+    func startFlicker() {
         timer = DispatchSource.makeTimerSource(queue: .global())
         timer?.schedule(deadline: .now(), repeating: .seconds(1))
         
         var isOn: Bool = false
-        timer?.setEventHandler(handler: { [weak self, weak label] in
+        timer?.setEventHandler(handler: { [weak self] in
             DispatchQueue.main.async {
-                guard let label = label else { return }
                 if isOn {
-                    self?.end(on: label)
+                    self?.end()
                 } else {
-                    self?.start(on: label)
+                    self?.start()
                 }
                 isOn.toggle()
             }
@@ -30,9 +29,9 @@ final class FlickerAD: PlainAD {
         timer?.resume()
     }
     
-    func endFlicker(on label: UILabel) {
+    func endFlicker() {
         timer?.cancel()
         timer = nil
-        end(on: label)
+        end()
     }
 }

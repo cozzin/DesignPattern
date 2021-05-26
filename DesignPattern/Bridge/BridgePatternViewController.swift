@@ -9,10 +9,10 @@ import UIKit
 
 final class BridgePatternViewController: UIViewController {
     
-    private lazy var plainGrayAD = PlainAD(display: GrayScaleDisplay(text: "Plain Gray AD"))
-    private lazy var plainColorAD = PlainAD(display: ColorDisplay(text: "Plain Color AD"))
-    private lazy var flickerGrayAD = FlickerAD(display: GrayScaleDisplay(text: "Flicker Gray AD"))
-    private lazy var flickerColorAD = FlickerAD(display: ColorDisplay(text: "Flicker Color AD"))
+    private lazy var plainGrayAD = PlainAD(display: GrayScaleDisplay(text: "Plain Gray AD", label: plainGrayLabel))
+    private lazy var plainColorAD = PlainAD(display: ColorDisplay(text: "Plain Color AD", label: plainColorLabel))
+    private lazy var flickerGrayAD = FlickerAD(display: GrayScaleDisplay(text: "Flicker Gray AD", label: flickerGrayLabel))
+    private lazy var flickerColorAD = FlickerAD(display: ColorDisplay(text: "Flicker Color AD", label: flickerColorLabel))
     
     private lazy var plainGrayLabel = UILabel()
     private lazy var plainColorLabel = UILabel()
@@ -96,17 +96,17 @@ final class BridgePatternViewController: UIViewController {
     
     @objc
     private func didTouchStartButton() {
-        plainGrayAD.start(on: plainGrayLabel)
-        plainColorAD.start(on: plainColorLabel)
-        flickerGrayAD.startFlicker(on: flickerGrayLabel)
-        flickerColorAD.startFlicker(on: flickerColorLabel)
+        plainGrayAD.start()
+        plainColorAD.start()
+        flickerGrayAD.startFlicker()
+        flickerColorAD.startFlicker()
     }
     
     @objc
     private func didTouchEndButton() {
-        plainGrayAD.end(on: plainGrayLabel)
-        plainColorAD.end(on: plainColorLabel)
-        flickerGrayAD.endFlicker(on: flickerGrayLabel)
-        flickerColorAD.endFlicker(on: flickerColorLabel)
+        plainGrayAD.end()
+        plainColorAD.end()
+        flickerGrayAD.endFlicker()
+        flickerColorAD.endFlicker()
     }
 }

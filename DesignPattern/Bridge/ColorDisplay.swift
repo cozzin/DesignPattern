@@ -10,13 +10,19 @@ import UIKit
 final class ColorDisplay: Display {
     
     private let text: String
+    private let label: UILabel
     
-    init(text: String) {
+    init(text: String, label: UILabel) {
         self.text = text
+        self.label = label
     }
     
-    func on() -> NSAttributedString {
-        return NSAttributedString(string: text, attributes: [
+    deinit {
+        print("deinit ColorDisplay")
+    }
+    
+    func on() {
+        label.attributedText = NSAttributedString(string: text, attributes: [
             .font: UIFont.boldSystemFont(ofSize: 30),
             .foregroundColor: UIColor(
                 red: .random(in: 0...1),
@@ -27,8 +33,8 @@ final class ColorDisplay: Display {
         ])
     }
     
-    func off() -> NSAttributedString {
-        return NSAttributedString(string: text.map { _ in "." }.joined(), attributes: [
+    func off() {
+        label.attributedText = NSAttributedString(string: text.map { _ in "." }.joined(), attributes: [
             .font: UIFont.boldSystemFont(ofSize: 30),
             .foregroundColor: UIColor.black
         ])

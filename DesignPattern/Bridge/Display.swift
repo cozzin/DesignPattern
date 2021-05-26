@@ -8,6 +8,6 @@
 import Foundation
 
 protocol Display {
-    func on() -> NSAttributedString
-    func off() -> NSAttributedString
+    func on()
+    func off()
 }

@@ -10,20 +10,26 @@ import UIKit
 final class GrayScaleDisplay: Display {
     
     private let text: String
+    private let label: UILabel
     
-    init(text: String) {
+    init(text: String, label: UILabel) {
         self.text = text
+        self.label = label
     }
     
-    func on() -> NSAttributedString {
-        return NSAttributedString(string: text, attributes: [
+    deinit {
+        print("deinit GrayScaleDisplay")
+    }
+    
+    func on() {
+        label.attributedText = NSAttributedString(string: text, attributes: [
             .font: UIFont.boldSystemFont(ofSize: 30),
             .foregroundColor: UIColor.systemGray
         ])
     }
     
-    func off() -> NSAttributedString {
-        return NSAttributedString(string: text.map { _ in "." }.joined(), attributes: [
+    func off() {
+        label.attributedText = NSAttributedString(string: text.map { _ in "." }.joined(), attributes: [
             .font: UIFont.boldSystemFont(ofSize: 30),
             .foregroundColor: UIColor.black
         ])

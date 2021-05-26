@@ -15,11 +15,11 @@ class PlainAD {
         self.display = display
     }
     
-    func start(on label: UILabel) {
-        label.attributedText = display.on()
+    func start() {
+        display.on()
     }
     
-    func end(on label: UILabel) {
-        label.attributedText = display.off()
+    func end() {
+        display.off()
     }
 }
