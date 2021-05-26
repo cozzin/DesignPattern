@@ -5,7 +5,7 @@
 //  Created by seongho.hong on 2021/05/26.
 //
 
-import UIKit
+import Foundation
 
 class PlainAD {
     
