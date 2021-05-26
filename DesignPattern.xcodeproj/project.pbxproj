@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE7560BA265E78B1007D60F2 /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7560B9265E78B1007D60F2 /* Display.swift */; };
+		CE7560BE265E78DF007D60F2 /* GrayScaleDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7560BD265E78DF007D60F2 /* GrayScaleDisplay.swift */; };
+		CE7560C2265E795A007D60F2 /* ColorDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7560C1265E795A007D60F2 /* ColorDisplay.swift */; };
+		CE7560CE265E8315007D60F2 /* PlainAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7560CD265E8315007D60F2 /* PlainAD.swift */; };
+		CE7560D6265E83BB007D60F2 /* BridgePatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7560D5265E83BB007D60F2 /* BridgePatternViewController.swift */; };
+		CE7560DC265E87EC007D60F2 /* FlickAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7560DB265E87EC007D60F2 /* FlickAD.swift */; };
 		CE86CD012655004E004C411D /* PrintWritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86CD002655004E004C411D /* PrintWritable.swift */; };
 		CE86CD072655005F004C411D /* PrintWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86CD062655005F004C411D /* PrintWriter.swift */; };
 		CE86CD0B26550073004C411D /* CachedPrintWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86CD0A26550073004C411D /* CachedPrintWriter.swift */; };
@@ -44,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE7560B9265E78B1007D60F2 /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
+		CE7560BD265E78DF007D60F2 /* GrayScaleDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayScaleDisplay.swift; sourceTree = "<group>"; };
+		CE7560C1265E795A007D60F2 /* ColorDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDisplay.swift; sourceTree = "<group>"; };
+		CE7560CD265E8315007D60F2 /* PlainAD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainAD.swift; sourceTree = "<group>"; };
+		CE7560D5265E83BB007D60F2 /* BridgePatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgePatternViewController.swift; sourceTree = "<group>"; };
+		CE7560DB265E87EC007D60F2 /* FlickAD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickAD.swift; sourceTree = "<group>"; };
 		CE86CD002655004E004C411D /* PrintWritable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintWritable.swift; sourceTree = "<group>"; };
 		CE86CD062655005F004C411D /* PrintWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintWriter.swift; sourceTree = "<group>"; };
 		CE86CD0A26550073004C411D /* CachedPrintWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedPrintWriter.swift; sourceTree = "<group>"; };
@@ -92,6 +104,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE7560B8265E7614007D60F2 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				CE7560B9265E78B1007D60F2 /* Display.swift */,
+				CE7560BD265E78DF007D60F2 /* GrayScaleDisplay.swift */,
+				CE7560C1265E795A007D60F2 /* ColorDisplay.swift */,
+				CE7560CD265E8315007D60F2 /* PlainAD.swift */,
+				CE7560DB265E87EC007D60F2 /* FlickAD.swift */,
+				CE7560D5265E83BB007D60F2 /* BridgePatternViewController.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
 		CE86CCFF26550042004C411D /* PrintWriter */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +178,7 @@
 		CEC7FE29263F0E3400616CD8 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				CE7560B8265E7614007D60F2 /* Bridge */,
 				CE8BB14626516E6E007E399C /* Builder */,
 				CEC7FE5D263F0E3F00616CD8 /* Iterator */,
 				CE961B492642CB0100D54F2F /* TemplateMethod */,
@@ -291,15 +317,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8BB1682651F4BE007E399C /* HTMLBuilder.swift in Sources */,
+				CE7560BA265E78B1007D60F2 /* Display.swift in Sources */,
+				CE7560BE265E78DF007D60F2 /* GrayScaleDisplay.swift in Sources */,
 				CE8BB1642651F2CA007E399C /* TextBuilder.swift in Sources */,
 				CE86CD0B26550073004C411D /* CachedPrintWriter.swift in Sources */,
+				CE7560D6265E83BB007D60F2 /* BridgePatternViewController.swift in Sources */,
 				CE8BB1602651708C007E399C /* Director.swift in Sources */,
 				CEC7FE2F263F0E3400616CD8 /* ViewController.swift in Sources */,
+				CE7560CE265E8315007D60F2 /* PlainAD.swift in Sources */,
 				CEC7FE82263F170100616CD8 /* BookShelfIterator.swift in Sources */,
 				CE86CD012655004E004C411D /* PrintWritable.swift in Sources */,
 				CEC7FE2B263F0E3400616CD8 /* AppDelegate.swift in Sources */,
 				CEC7FE7E263F16B700616CD8 /* Book.swift in Sources */,
 				CE961B552642D3E500D54F2F /* StringDisplay.swift in Sources */,
+				CE7560C2265E795A007D60F2 /* ColorDisplay.swift in Sources */,
 				CEC7FE2D263F0E3400616CD8 /* SceneDelegate.swift in Sources */,
 				CEC7FE76263F139E00616CD8 /* Iterator.swift in Sources */,
 				CEC7FE70263F12B300616CD8 /* BookShelf.swift in Sources */,
@@ -307,6 +338,7 @@
 				CE961B512642D31600D54F2F /* CharDisplay.swift in Sources */,
 				CE86CD072655005F004C411D /* PrintWriter.swift in Sources */,
 				CEC7FE7A263F146700616CD8 /* Aggregate.swift in Sources */,
+				CE7560DC265E87EC007D60F2 /* FlickAD.swift in Sources */,
 				CE8BB15A26516FCF007E399C /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
