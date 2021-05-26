@@ -11,21 +11,21 @@ final class BridgePatternViewController: UIViewController {
     
     private lazy var plainGrayAD = PlainAD(display: GrayScaleDisplay(text: "Plain Gray AD"))
     private lazy var plainColorAD = PlainAD(display: ColorDisplay(text: "Plain Color AD"))
-    private lazy var flickGrayAD = FlickAD(display: GrayScaleDisplay(text: "Flick Gray AD"))
-    private lazy var flickColorAD = FlickAD(display: ColorDisplay(text: "Flick Color AD"))
+    private lazy var flickerGrayAD = FlickerAD(display: GrayScaleDisplay(text: "Flicker Gray AD"))
+    private lazy var flickerColorAD = FlickerAD(display: ColorDisplay(text: "Flicker Color AD"))
     
     private lazy var plainGrayLabel = UILabel()
     private lazy var plainColorLabel = UILabel()
-    private lazy var flickGrayLabel = UILabel()
-    private lazy var flickColorLabel = UILabel()
+    private lazy var flickerGrayLabel = UILabel()
+    private lazy var flickerColorLabel = UILabel()
     
     private lazy var stackView: UIStackView = {
         let stackView: UIStackView = UIStackView(
             arrangedSubviews: [
                 plainGrayLabel,
                 plainColorLabel,
-                flickGrayLabel,
-                flickColorLabel
+                flickerGrayLabel,
+                flickerColorLabel
             ]
         )
         stackView.axis = .vertical
@@ -98,15 +98,15 @@ final class BridgePatternViewController: UIViewController {
     private func didTouchStartButton() {
         plainGrayAD.start(on: plainGrayLabel)
         plainColorAD.start(on: plainColorLabel)
-        flickGrayAD.startFlick(on: flickGrayLabel)
-        flickColorAD.startFlick(on: flickColorLabel)
+        flickerGrayAD.startFlicker(on: flickerGrayLabel)
+        flickerColorAD.startFlicker(on: flickerColorLabel)
     }
     
     @objc
     private func didTouchEndButton() {
         plainGrayAD.end(on: plainGrayLabel)
         plainColorAD.end(on: plainColorLabel)
-        flickGrayAD.endFlick(on: flickGrayLabel)
-        flickColorAD.endFlick(on: flickColorLabel)
+        flickerGrayAD.endFlicker(on: flickerGrayLabel)
+        flickerColorAD.endFlicker(on: flickerColorLabel)
     }
 }

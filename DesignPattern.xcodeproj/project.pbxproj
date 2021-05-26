@@ -12,7 +12,7 @@
 		CE7560C2265E795A007D60F2 /* ColorDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7560C1265E795A007D60F2 /* ColorDisplay.swift */; };
 		CE7560CE265E8315007D60F2 /* PlainAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7560CD265E8315007D60F2 /* PlainAD.swift */; };
 		CE7560D6265E83BB007D60F2 /* BridgePatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7560D5265E83BB007D60F2 /* BridgePatternViewController.swift */; };
-		CE7560DC265E87EC007D60F2 /* FlickAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7560DB265E87EC007D60F2 /* FlickAD.swift */; };
+		CE7560DC265E87EC007D60F2 /* FlickerAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7560DB265E87EC007D60F2 /* FlickerAD.swift */; };
 		CE86CD012655004E004C411D /* PrintWritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86CD002655004E004C411D /* PrintWritable.swift */; };
 		CE86CD072655005F004C411D /* PrintWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86CD062655005F004C411D /* PrintWriter.swift */; };
 		CE86CD0B26550073004C411D /* CachedPrintWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86CD0A26550073004C411D /* CachedPrintWriter.swift */; };
@@ -55,7 +55,7 @@
 		CE7560C1265E795A007D60F2 /* ColorDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDisplay.swift; sourceTree = "<group>"; };
 		CE7560CD265E8315007D60F2 /* PlainAD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainAD.swift; sourceTree = "<group>"; };
 		CE7560D5265E83BB007D60F2 /* BridgePatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgePatternViewController.swift; sourceTree = "<group>"; };
-		CE7560DB265E87EC007D60F2 /* FlickAD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickAD.swift; sourceTree = "<group>"; };
+		CE7560DB265E87EC007D60F2 /* FlickerAD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerAD.swift; sourceTree = "<group>"; };
 		CE86CD002655004E004C411D /* PrintWritable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintWritable.swift; sourceTree = "<group>"; };
 		CE86CD062655005F004C411D /* PrintWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintWriter.swift; sourceTree = "<group>"; };
 		CE86CD0A26550073004C411D /* CachedPrintWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedPrintWriter.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 				CE7560BD265E78DF007D60F2 /* GrayScaleDisplay.swift */,
 				CE7560C1265E795A007D60F2 /* ColorDisplay.swift */,
 				CE7560CD265E8315007D60F2 /* PlainAD.swift */,
-				CE7560DB265E87EC007D60F2 /* FlickAD.swift */,
+				CE7560DB265E87EC007D60F2 /* FlickerAD.swift */,
 				CE7560D5265E83BB007D60F2 /* BridgePatternViewController.swift */,
 			);
 			path = Bridge;
@@ -338,7 +338,7 @@
 				CE961B512642D31600D54F2F /* CharDisplay.swift in Sources */,
 				CE86CD072655005F004C411D /* PrintWriter.swift in Sources */,
 				CEC7FE7A263F146700616CD8 /* Aggregate.swift in Sources */,
-				CE7560DC265E87EC007D60F2 /* FlickAD.swift in Sources */,
+				CE7560DC265E87EC007D60F2 /* FlickerAD.swift in Sources */,
 				CE8BB15A26516FCF007E399C /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

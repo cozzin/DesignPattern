@@ -1,5 +1,5 @@
 //
-//  FlickAD.swift
+//  FlickerAD.swift
 //  DesignPattern
 //
 //  Created by seongho.hong on 2021/05/26.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-final class FlickAD: PlainAD {
+final class FlickerAD: PlainAD {
     
     private var timer: DispatchSourceTimer?
     
-    func startFlick(on label: UILabel) {
+    func startFlicker(on label: UILabel) {
         timer = DispatchSource.makeTimerSource(queue: .global())
         timer?.schedule(deadline: .now(), repeating: .seconds(1))
         
@@ -30,7 +30,7 @@ final class FlickAD: PlainAD {
         timer?.resume()
     }
     
-    func endFlick(on label: UILabel) {
+    func endFlicker(on label: UILabel) {
         timer?.cancel()
         timer = nil
         end(on: label)
